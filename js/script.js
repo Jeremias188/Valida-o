@@ -87,3 +87,24 @@ function verificaCampo(campo) {
         mensagemErro.textContent = "";
     }
 }
+
+function validacampos() {
+    if (document.getElementById("nome").value==""){
+        document.getElementById("valida-nome").innerHTML="O campo de nome não pode estar vazio.";
+    } else {document.getElementById("valida-nome").innerHTML="";}
+    if (document.getElementById("email").value==""){
+        document.getElementById("valida-email").innerHTML="O campo de e-mail não pode estar vazio.";
+    } else {document.getElementById("valida-email").innerHTML="";}
+    if (document.getElementById("rg").value==""){
+        document.getElementById("valida-rg").innerHTML="O campo de RG não pode estar vazio.";
+    } else {document.getElementById("valida-rg").innerHTML="";}
+    if (document.getElementById("cpf").value==""){
+        document.getElementById("valida-cpf").innerHTML="O campo de CPF não pode estar vazio.";
+    } else {document.getElementById("valida-cpf").innerHTML="";}
+    if (document.getElementById("aniversario").value==""){
+        document.getElementById("valida-aniversario").innerHTML="O campo de data de nascimento não pode estar vazio.";
+    } else {document.getElementById("valida-aniversario").innerHTML="";}
+    if (document.getElementById("termos").value==""){
+        document.getElementById("valida-termo").innerHTML="Você deve aceitar nossos termos antes de continuar.";
+    } else {document.getElementById("valida-termo").innerHTML="";}
+}
